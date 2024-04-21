@@ -1,0 +1,83 @@
+#scale1 {
+  background-color:yellow;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+}
+
+#scale1:hover {
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-name: scaleIn;
+}
+
+@keyframes scaleIn {
+  /*キーフレーム*/
+  from 
+  {transform: scale(1)}
+  to
+  {transform: scale(2)}
+}
+
+#scale2 {
+  background-color:red;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 150px;
+}
+
+#scale2:hover {
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-name: scaleOut;
+}
+
+@keyframes scaleOut {
+  /*キーフレーム*/
+  to
+  {transform: scale(0.5)}
+}
+
+#scale3 {
+  background-color:blue;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 300px;
+}
+
+#scale3:hover {
+  animation-duration: 1000ms;
+  animation-name: scaleIn2;
+}
+
+@keyframes scaleIn2 {
+  /*キーフレーム*/
+  from
+  {transform: scale(1)}
+  to
+  {transform: scale(2,1)}  
+}
+
+#scale4 {
+  background-color:green;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 450px;
+}
+
+#scale4:hover {
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-name: scaleOut2;
+}
+
+@keyframes scaleOut2 {
+  /*キーフレーム*/
+  from
+  {transform: scale(1)}
+  to
+  {transform: scaleY(0.5)}    
+}
